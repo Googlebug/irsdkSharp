@@ -336,7 +336,7 @@ namespace irsdkSharp.Serialization.Models.Data
 
         public int ReplaySessionNum => ValueSerializer.GetIntValue(nameof(ReplaySessionNum), _data, _headers);
 
-        public double ReplaySessionTime => ValueSerializer.GetFloatValue(nameof(ReplaySessionTime), _data, _headers);
+        public double ReplaySessionTime => ValueSerializer.GetDoubleValue(nameof(ReplaySessionTime), _data, _headers);
 
         public float RFbrakeLinePress => ValueSerializer.GetFloatValue(nameof(RFbrakeLinePress), _data, _headers);
 
@@ -406,11 +406,11 @@ namespace irsdkSharp.Serialization.Models.Data
 
         public int SessionTick => ValueSerializer.GetIntValue(nameof(SessionTick), _data, _headers);
 
-        public double SessionTime => ValueSerializer.GetFloatValue(nameof(SessionTime), _data, _headers);
+        public double SessionTime => ValueSerializer.GetDoubleValue(nameof(SessionTime), _data, _headers);
 
         public float SessionTimeOfDay => ValueSerializer.GetFloatValue(nameof(SessionTimeOfDay), _data, _headers);
 
-        public double SessionTimeRemain => ValueSerializer.GetFloatValue(nameof(SessionTimeRemain), _data, _headers);
+        public double SessionTimeRemain => ValueSerializer.GetDoubleValue(nameof(SessionTimeRemain), _data, _headers);
 
         public int SessionUniqueID => ValueSerializer.GetIntValue(nameof(SessionUniqueID), _data, _headers);
 
