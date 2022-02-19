@@ -66,7 +66,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxBestLapNum.HasValue) _carIdxBestLapNum = ValueSerializer.GetIntValue(nameof(CarIdxBestLapNum), _data, _headers, CarIdx);
+                if (!_carIdxBestLapNum.HasValue) _carIdxBestLapNum = ValueSerializer.GetIntValue(nameof(CarIdxBestLapNum), _data, _headers);
                 return _carIdxBestLapNum.Value;
             }
         }
@@ -76,7 +76,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxBestLapTime.HasValue) _carIdxBestLapTime = ValueSerializer.GetFloatValue(nameof(CarIdxBestLapTime), _data, _headers, CarIdx);
+                if (!_carIdxBestLapTime.HasValue) _carIdxBestLapTime = ValueSerializer.GetFloatValue(nameof(CarIdxBestLapTime), _data, _headers);
                 return _carIdxBestLapTime.Value;
             }
         }
@@ -86,7 +86,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxClassPosition.HasValue) _carIdxClassPosition = ValueSerializer.GetIntValue(nameof(CarIdxClassPosition), _data, _headers, CarIdx);
+                if (!_carIdxClassPosition.HasValue) _carIdxClassPosition = ValueSerializer.GetIntValue(nameof(CarIdxClassPosition), _data, _headers);
                 return _carIdxClassPosition.Value;
             }
         }
@@ -96,7 +96,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxEstTime.HasValue) _carIdxEstTime = ValueSerializer.GetFloatValue(nameof(CarIdxEstTime), _data, _headers, CarIdx);
+                if (!_carIdxEstTime.HasValue) _carIdxEstTime = ValueSerializer.GetFloatValue(nameof(CarIdxEstTime), _data, _headers);
                 return _carIdxEstTime.Value;
             }
         }
@@ -106,7 +106,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxF2Time.HasValue) _carIdxF2Time = ValueSerializer.GetFloatValue(nameof(CarIdxF2Time), _data, _headers, CarIdx);
+                if (!_carIdxF2Time.HasValue) _carIdxF2Time = ValueSerializer.GetFloatValue(nameof(CarIdxF2Time), _data, _headers);
                 return _carIdxF2Time.Value;
             }
         }
@@ -116,7 +116,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxGear.HasValue) _carIdxGear = ValueSerializer.GetIntValue(nameof(CarIdxGear), _data, _headers, CarIdx);
+                if (!_carIdxGear.HasValue) _carIdxGear = ValueSerializer.GetIntValue(nameof(CarIdxGear), _data, _headers);
                 return _carIdxGear.Value;
             }
         }
@@ -126,7 +126,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxLap.HasValue) _carIdxLap = ValueSerializer.GetIntValue(nameof(CarIdxLap), _data, _headers, CarIdx);
+                if (!_carIdxLap.HasValue) _carIdxLap = ValueSerializer.GetIntValue(nameof(CarIdxLap), _data, _headers);
                 return _carIdxLap.Value;
             }
         }
@@ -136,7 +136,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxLapCompleted.HasValue) _carIdxLapCompleted = ValueSerializer.GetIntValue(nameof(CarIdxLapCompleted), _data, _headers, CarIdx);
+                if (!_carIdxLapCompleted.HasValue) _carIdxLapCompleted = ValueSerializer.GetIntValue(nameof(CarIdxLapCompleted), _data, _headers);
                 return _carIdxLapCompleted.Value;
             }
         }
@@ -146,7 +146,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxLapDistPct.HasValue) _carIdxLapDistPct = ValueSerializer.GetFloatValue(nameof(CarIdxLapDistPct), _data, _headers, CarIdx);
+                if (!_carIdxLapDistPct.HasValue) _carIdxLapDistPct = ValueSerializer.GetFloatValue(nameof(CarIdxLapDistPct), _data, _headers);
                 return _carIdxLapDistPct.Value;
             }
         }
@@ -156,7 +156,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxLastLapTime.HasValue) _carIdxLastLapTime = ValueSerializer.GetFloatValue(nameof(CarIdxLastLapTime), _data, _headers, CarIdx);
+                if (!_carIdxLastLapTime.HasValue) _carIdxLastLapTime = ValueSerializer.GetFloatValue(nameof(CarIdxLastLapTime), _data, _headers);
                 return _carIdxLastLapTime.Value;
             }
         }
@@ -166,7 +166,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxOnPitRoad.HasValue) _carIdxOnPitRoad = ValueSerializer.GetBoolValue(nameof(CarIdxOnPitRoad), _data, _headers, CarIdx, CarIdx);
+                if (!_carIdxOnPitRoad.HasValue) _carIdxOnPitRoad = ValueSerializer.GetBoolValue(nameof(CarIdxOnPitRoad), _data, _headers, CarIdx);
                 return _carIdxOnPitRoad.Value;
             }
         }
@@ -176,7 +176,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxP2P_Count.HasValue) _carIdxP2P_Count = ValueSerializer.GetIntValue(nameof(CarIdxP2P_Count), _data, _headers, CarIdx);
+                if (!_carIdxP2P_Count.HasValue) _carIdxP2P_Count = ValueSerializer.GetIntValue(nameof(CarIdxP2P_Count), _data, _headers);
                 return _carIdxP2P_Count.Value;
             }
         }
@@ -186,7 +186,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxP2P_Status.HasValue) _carIdxP2P_Status = ValueSerializer.GetBoolValue(nameof(CarIdxP2P_Status), _data, _headers, CarIdx, CarIdx);
+                if (!_carIdxP2P_Status.HasValue) _carIdxP2P_Status = ValueSerializer.GetBoolValue(nameof(CarIdxP2P_Status), _data, _headers, CarIdx);
                 return _carIdxP2P_Status.Value;
             }
         }
@@ -196,7 +196,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxPosition.HasValue) _carIdxPosition = ValueSerializer.GetIntValue(nameof(CarIdxPosition), _data, _headers, CarIdx);
+                if (!_carIdxPosition.HasValue) _carIdxPosition = ValueSerializer.GetIntValue(nameof(CarIdxPosition), _data, _headers);
                 return _carIdxPosition.Value;
             }
         }
@@ -206,7 +206,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxRPM.HasValue) _carIdxRPM = ValueSerializer.GetFloatValue(nameof(CarIdxRPM), _data, _headers, CarIdx);
+                if (!_carIdxRPM.HasValue) _carIdxRPM = ValueSerializer.GetFloatValue(nameof(CarIdxRPM), _data, _headers);
                 return _carIdxRPM.Value;
             }
         }
@@ -216,7 +216,7 @@ namespace irsdkSharp.Serialization.Models.Data
         {
             get
             {
-                if (!_carIdxSteer.HasValue) _carIdxSteer = ValueSerializer.GetFloatValue(nameof(CarIdxSteer), _data, _headers, CarIdx);
+                if (!_carIdxSteer.HasValue) _carIdxSteer = ValueSerializer.GetFloatValue(nameof(CarIdxSteer), _data, _headers);
                 return _carIdxSteer.Value;
             }
         }
