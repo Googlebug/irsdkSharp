@@ -31,6 +31,9 @@ namespace irsdkSharp
         protected MemoryMappedViewAccessor FileMapView;
         protected Dictionary<string, VarHeader> VarHeaders;
 
+        //events
+        public event EventHandler OnDataChanged;
+
         public static MemoryMappedViewAccessor GetFileMapView(IRacingSDK racingSDK)
         {
             return racingSDK.FileMapView;
@@ -136,6 +139,8 @@ namespace irsdkSharp
                         if (Header == null) Header = new IRacingSdkHeader(FileMapView);
                         if (IsConnected() && VarHeaders == null) GetVarHeaders();
                         if (!IsConnected() && VarHeaders != null) VarHeaders = null;
+
+                        OnDataChanged?.Invoke(this, new EventArgs());
                     }
                     catch
                     {
@@ -289,8 +294,8 @@ namespace irsdkSharp
         [DllImport("user32.dll")]
         private static extern IntPtr RegisterWindowMessage(string lpProcName);
 
-        //[DllImport("user32.dll")]
-        //private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImport("user32.dll")]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
 
         [DllImport("user32.dll")]
         private static extern IntPtr PostMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
